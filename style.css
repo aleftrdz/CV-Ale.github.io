@@ -1,0 +1,206 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+/*Selectores de tipo etiqueta HTML*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    background-color:#ffffff;
+    padding: 0;
+}
+
+#general {
+    margin: auto;
+    width: 90vw;
+    height: 100vh;
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "aside1 header"
+    "aside main";
+}
+
+#Foto {
+    grid-area: aside1;
+    background-color: #f7f7f7;
+    align-self: center;
+}
+
+#Encabezado {
+    grid-area: header;
+    width: 30 vw;
+    height: 30 vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+    transition-duration: 1000ms;
+    box-shadow: 0 4px 6px;
+}
+
+
+.contacto{
+  text-align: center;  
+}
+
+.pcont{
+    text-align: center;
+}
+
+#Encabezado:hover{
+   background-color: #B4FF95; 
+}
+
+#Principal {
+    width: 30 vw;
+    height: 40 vh;
+    grid-area: main;
+    background-color: #f7f7f7;
+    display:inline-block;
+   justify-content: first baseline;
+   box-shadow: 0 4px 6px;
+
+}
+
+.FormAcad{
+    order: center;
+    padding-left: 30%;
+
+}
+
+.listap {
+    padding-left: 50px;
+}
+
+.ExpLab{
+    align-self: center;
+    padding-left: 30%;
+}
+
+.ActExt{
+    align-self: center;
+    padding-left: 30%;
+
+
+}
+
+.Cursos{
+    align-self: center;
+    padding-left: 30%;
+    
+ 
+}
+ 
+
+#Lado {
+    grid-area: aside;
+    height: 10 vh;
+    width: 20 vw;
+    box-shadow: 0 4px 6px;
+    padding: 20px;
+    background-color: #B4FF95;
+}
+
+.Descripcion-perfil {
+margin-top: 10%;
+margin-bottom: 15%;
+}
+
+.Habilidades {
+margin-bottom: 15%;
+}
+
+.Habiblandas {
+margin-bottom: 15%;
+}
+
+.Idiomas {
+    margin-bottom: 15%;
+    padding-left: 12%;
+
+}
+
+/*Foto*/
+#foto-perfil{
+    height: 200px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: block; 
+    align-items: center;
+    margin: 0 auto;  /* Establece el margen automático en los lados izquierdo y derecho para centrarla horizontalmente */
+    transition-duration: 1000ms;
+    box-shadow: 0 4px 6px;
+}
+
+#foto-perfil:hover{
+    height: 250px;
+}
+
+/*Color*/ 
+h1{
+    color: #333;
+    text-align: center;
+    
+}
+
+h2{
+    background-color: #B4FF95;
+    color: #555;
+    margin-left: 5%;
+    place-self: center stretch;
+    
+}
+
+p{
+    color: #777;
+    align-self:center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: justify;
+}
+
+#resumen{
+    color: black;
+    padding-left: 12%;
+}
+
+.tiempop {
+    color: black;
+}
+
+.listal{
+    padding-left: 12%;
+}
+
+#p{
+    padding-left: 0%;
+    color: black;
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #foto-perfil{
+        height: 20px;}
+    #lado{
+        width: fit-content;
+    }
+    #principal{
+        width: fit-content;
+    }
+    
+  }
+
+  
